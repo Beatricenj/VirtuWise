@@ -24,7 +24,8 @@ Empower experts to deliver timely, high-quality services.
 ✅ Deployed Frontend with Continuous Integration (Vercel + GitHub)
 
 🛠 Tech Stack
-Frontend
+
+1. Frontend
 
 React.js (with Vite for fast builds)
 
@@ -34,7 +35,7 @@ Lucide React for icons
 
 Context API for state management
 
-Backend
+2. Backend
 
 Node.js & Express.js (to be hosted separately or integrated as serverless functions)
 
@@ -42,7 +43,7 @@ MongoDB + Mongoose ORM for database modeling
 
 Nodemailer for automated email delivery
 
-Infrastructure & Deployment
+3. Infrastructure & Deployment
 
 Frontend Hosting: Vercel
 
