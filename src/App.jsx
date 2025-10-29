@@ -15,9 +15,23 @@ const App = () => {
   };
 
   const renderPage = () => {
-    switch(currentPage) {
+    switch (currentPage) {
       case 'home':
-        return <Homepage navigateTo={navigateTo} />;
+        return (
+          <>
+            <h2
+              style={{
+                textAlign: 'center',
+                marginTop: '1rem',
+                color: '#6B21A8',
+                fontWeight: '600',
+              }}
+            >
+              ✅ Auto-Deploy Test: VirtuWise is live!
+            </h2>
+            <Homepage navigateTo={navigateTo} />
+          </>
+        );
       case 'auth':
         return <AuthPage navigateTo={navigateTo} setUser={setUser} />;
       case 'academic-support':
@@ -31,10 +45,13 @@ const App = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex flex-col">
-      <Header currentPage={currentPage} navigateTo={navigateTo} user={user} setUser={setUser} />
-      <main className="flex-grow">
-        {renderPage()}
-      </main>
+      <Header
+        currentPage={currentPage}
+        navigateTo={navigateTo}
+        user={user}
+        setUser={setUser}
+      />
+      <main className="flex-grow">{renderPage()}</main>
       <Footer navigateTo={navigateTo} />
     </div>
   );
